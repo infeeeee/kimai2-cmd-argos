@@ -8,12 +8,13 @@ Argos/Kargos/Bitbar script for Kimai2. Only useable with [kimai2-cmd](https://gi
 
 - Install [Kimai2](https://www.kimai.org/) on a server, and create an API password
 - Download and setup [kimai2-cmd](https://github.com/infeeeee/kimai2-cmd). Minimum version: 0.2.0
-- Link kimai2-cmd as `kimai` with the following command:
-```
-sudo ln -s /path/to/kimai2-cmd-os /usr/bin/kimai
-```
-This last step is very important, otherways it won't work. if you link it as other name you have to modify the shell script
-
+  - Link kimai2-cmd as `kimai` with the following command:
+     ```
+     sudo ln -s /path/to/kimai2-cmd-os /usr/bin/kimai
+     ```
+  - Alternatively, you can adjust the KIMAI_CMD variable in `kimai.1r.1m.sh`
+- Make the bash script executable `chmod +x kimai.1r.1m.sh`
+ 
 ### Argos - Gnome
 
 Install Argos from Gnome extensions: https://extensions.gnome.org/extension/1176/argos/
@@ -36,7 +37,17 @@ Not tested yet, it should work, similar to Argos install
 
 ### Bitbar - Mac
 
-Not tested yet, it should work, similar to Argos install
+Install BitBar:
+- Install BitBar, eg `brew cask install bitbar`
+- Create a BitBar plugin directory
+- Start BitBar and point it to your plugin directory
+
+Add the Kimai plugin:
+- Clone this repository somewhere
+- Symlink the plugin into your BitBar plugin directory
+- If you don't want the global kimai-cmd, then you can adjust the KIMAI_CMD in the script, eg:
+ `export KIMAI_CMD="/usr/local/bin/node /Users/infeeeee/kimai2-cmd/kimai2-cmd.js"`
+- Reload BitBar from its dropdown
 
 ## Usage
 

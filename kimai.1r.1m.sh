@@ -1,11 +1,12 @@
 #!/bin/bash
-kimai -b list-active
+export KIMAI_CMD=kimai
+$KIMAI_CMD -b list-active
 echo "---"
 echo "Active measurements: (Click to stop)"
-kimai -a list-active
+$KIMAI_CMD -a list-active
 echo "---"
 echo "Recent measurements:"
-kimai -a list-recent
+$KIMAI_CMD -a list-recent
 echo "---"
-echo "Open Kimai in browser | href='$(kimai url)'"
+echo "Open Kimai in browser | href='$($KIMAI_CMD url)'"
 echo "Reload | refresh=true"
