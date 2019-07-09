@@ -21,11 +21,11 @@ Install Argos from Gnome extensions: https://extensions.gnome.org/extension/1176
 Download the script file to `~/.config/argos`
 
 ```
-curl..
+curl https://raw.githubusercontent.com/infeeeee/kimai2-cmd-argos/master/kimai.1r.1m.sh -o ~/.config/argos/kimai.1r.1m.sh
 ```
-Make sure it's executable:
+Make sure it executable:
 ```
-sudo chmod +x kimai.1r.1m.sh
+sudo chmod +x ~/.config/argos/kimai.1r.1m.sh
 ```
 It should appear on your top bar. To modify it's location and refresh rate modify the file name according to argos documentation: 
 https://github.com/p-e-w/argos/
