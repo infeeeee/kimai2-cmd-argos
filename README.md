@@ -64,11 +64,25 @@ If you click on a recent mesurement it will be restarted.
 
 Click reload to reload
 
+## Screenshots
+
+### Argos - Gnome
+
+![Argos - active measurement](img/screenshot-argos-active.png)
+
+![Argos - recent measurements](img/screenshot-argos-recent.png)
+
+### Bitbar - Mac
+
+![Bitbar - active measurement](img/screenshot-bitbar-active.png)
+
+![Bitbar - recent measurements](img/screenshot-bitbar-recent.png)
+
 ## Settings
 
 ### Settings in the script
 
-You shouldn't change here anything, if you linked the executable to `/usr/bin`
+You shouldn't change here anything, if you linked the executable to `/usr/bin/kimai`
 
 If you don't want to link it, add the path to kimai on line 13, after the `=` sign like this:
 
@@ -94,7 +108,7 @@ kimaipath=/path/to/kimai2-cmd-macos
 buttonlength=10
 ```
 
-`kimaipath`: On mac you have to use the full path to kimai2-cmd here. On linux you can use alias. The default value is the full path to the executable, on linux it's simply `kimai`
+`kimaipath`: On mac you have to use the full path to kimai2-cmd here. On linux you can use alias. The default value on mac is the full path to the executable, on linux it's simply `kimai`
 
 `buttonlength`: The length of the always visible button in characters. Only applies if there is an active measurement. Default is `10`
 
