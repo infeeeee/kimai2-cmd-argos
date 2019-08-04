@@ -82,15 +82,16 @@ Click reload to reload
 
 ### Settings in the script
 
-You shouldn't change here anything, if you linked the executable to `/usr/bin/kimai`
-
-If you don't want to link it, add the path to kimai on line 13, after the `=` sign like this:
+You can change the path to kimai:
 
 ```
-# settings
 # path to kimai:
 kimaipath=/path/to/kimai2-cmd-macos
 ```
+
+You can change the image by uncommenting th selected line. Default is White icon with alpha
+
+On mac if you want to use the colored icon you have to change `imagetype` to `imagetype=image`. On linux these setting doesn't do anything.
 
 ### Settings in the script filename
 
